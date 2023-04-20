@@ -1,1 +1,84 @@
 @use 'css-reset';
+
+$dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+$gray-magenta: hsl(303, 10%, 53%);
+$light-gray-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+$font-size: 0.9375rem;
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
+$ff: 'League Spartan';
+
+/*
+  TODO:
+  check background images
+*/  
+
+body {
+    font-family: $ff;
+    font-size: $font-size;
+    font-weight: $fw-400;
+    // background-image: url('../public/images/bg-pattern-top-mobile.svg');
+}
+
+.App {
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    text-align: center;
+}
+
+header {
+    background-image: url('../public/images/bg-pattern-top-mobile.svg');
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-weight: $fw-700;
+    font-size: 2.8rem;
+    line-height: 2.5rem;
+    padding-block: 1.5rem;
+}
+
+aside {
+    padding-block: 2rem;
+}
+
+.rating {
+    background-color: $light-gray-magenta;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    font-weight: $fw-700;
+}
+
+.icon-star {
+    object-position: center;
+}
+
+main {
+
+}
+
+.profile {
+    background-color: $dark-magenta;
+    color: $white;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-inline: 1.8rem;
+}
+
+.profile-icon {
+    border-radius: 50%;
+}
+
+.verified {
+    color: $soft-pink;
+}
+
+.testimony {
+    text-align: left;
+    padding-inline: 0.7rem;
+    padding-block: 1.5rem;
+}
