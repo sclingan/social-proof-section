@@ -16,68 +16,61 @@ function App() {
         See what our satisfied customers are saying about our services.
         </p>
       </header>
-      <aside>
-        <div className='rating'>
-          <img src={star} alt="" className='icon-star'></img>
-        <p>
+      <ul>
+        <li className='rating'>
           Rated 5 Stars in Reviews
-        </p>
-        </div>
-        <div className='rating'>
-        <img src={star} alt="" className='icon-star'></img>
-        <p>
+        </li>
+        <li className='rating'>
           Rated 5 Stars in Report Guru
-        </p>
-        </div>
-        <div className='rating'>
-        <img src={star} alt="" className='icon-star'></img>
-        <p>
+        </li>
+        <li className='rating'>
           Rated 5 Stars in BestTech
-        </p>
-        </div>
-      </aside>
-      <main>
-        <div className='profile'>
+        </li>
+      </ul>
+      <ul>
+        <li className='profile'>
           <img src={colton} alt="" className='profile-icon'></img>
-        <p>
-          Colton Smith 
-        </p>
-        <p className='verified'>
-          Verified Buyer
-        </p>
-        <p className='testimony'>
-          "We needed the same printed design as the one we had ordered a week prior.
-          Not only did they find the original order, but we also received it in time.
-          Excellent!"
-        </p>
-        </div>
-        <div className='profile'>
-        <img src={irene} alt="" className='profile-icon'></img>
-        <p>
-          Irene Roberts 
-        </p>
-        <p className='verified'>
-          Verified Buyer
-        </p>
-        <p className='testimony'>
-          "Customer service is always excellent and very quick turn around. Completely
-          delighted with the simplicity of the purchase and the speed of delivery."
-        </p>
-        </div>
-        <div className='profile'>
-        <img src={anne} alt="" className='profile-icon'></img>
-        <p>
-          Anne Wallace 
-        </p>
-        <p className='verified'>
-          Verified Buyer
-        </p>
-        <p className='testimony'>
-          "Put an order with this company and can only praise them for the very high
-          standard. Will definitely use them again and recommend them to everyone!"
-        </p>
-        </div>
-      </main>
+          <p>
+            Colton Smith 
+          </p>
+          <p className='verified'>
+            Verified Buyer
+          </p>
+          <p className='testimony'>
+            "We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"
+          </p>
+        </li>
+
+        <li className='profile'>
+          <img src={irene} alt="" className='profile-icon'></img>
+          <p>
+            Irene Roberts 
+          </p>
+          <p className='verified'>
+            Verified Buyer
+          </p>
+          <p className='testimony'>
+            "Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."
+          </p>
+        </li>
+
+        <li className='profile'>
+          <img src={anne} alt="" className='profile-icon'></img>
+          <p>
+            Anne Wallace 
+          </p>
+          <p className='verified'>
+            Verified Buyer
+          </p>
+          <p className='testimony'>
+            "Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"
+          </p>
+        </li>
+      </ul>
     </div>
   )
 }

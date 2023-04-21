@@ -14,13 +14,14 @@ $ff: 'League Spartan';
 /*
   TODO:
   check background images
+  check font weights
 */  
 
 body {
     font-family: $ff;
     font-size: $font-size;
     font-weight: $fw-400;
-    // background-image: url('../public/images/bg-pattern-top-mobile.svg');
+    color: $dark-magenta;
 }
 
 .App {
@@ -41,8 +42,10 @@ h1 {
     padding-block: 1.5rem;
 }
 
-aside {
-    padding-block: 2rem;
+ul {
+    list-style-type: none;
+    margin: 2rem 0;
+    padding: 0;
 }
 
 .rating {
@@ -50,19 +53,23 @@ aside {
     border-radius: 0.2rem;
     margin-top: 1rem;
     font-weight: $fw-700;
+    padding-block: 0.8rem;
 }
 
-.icon-star {
-    object-position: center;
-}
-
-main {
-
+.rating::before {
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 6.3rem;
+    background-image: url('../public/images/icon-star.svg');
+    background-repeat: space;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
 }
 
 .profile {
     background-color: $dark-magenta;
-    color: $white;
+    color: white;
     border-radius: 0.5rem;
     margin-top: 1rem;
     padding-top: 2rem;
@@ -81,4 +88,5 @@ main {
     text-align: left;
     padding-inline: 0.7rem;
     padding-block: 1.5rem;
+    color: $white;
 }

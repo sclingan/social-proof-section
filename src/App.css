@@ -44,11 +44,13 @@ p, h1, h2, h3, h4, h5, h6 {
 /*
   TODO:
   check background images
+  check font weights
 */
 body {
   font-family: "League Spartan";
   font-size: 0.9375rem;
   font-weight: 400;
+  color: hsl(300, 43%, 22%);
 }
 
 .App {
@@ -69,8 +71,10 @@ h1 {
   padding-block: 1.5rem;
 }
 
-aside {
-  padding-block: 2rem;
+ul {
+  list-style-type: none;
+  margin: 2rem 0;
+  padding: 0;
 }
 
 .rating {
@@ -78,16 +82,23 @@ aside {
   border-radius: 0.2rem;
   margin-top: 1rem;
   font-weight: 700;
+  padding-block: 0.8rem;
 }
 
-.icon-star {
-  -o-object-position: center;
-     object-position: center;
+.rating::before {
+  content: "";
+  display: block;
+  height: 1rem;
+  width: 6.3rem;
+  background-image: url("../public/images/icon-star.svg");
+  background-repeat: space;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
 }
 
 .profile {
   background-color: hsl(300, 43%, 22%);
-  color: hsl(0, 0%, 100%);
+  color: white;
   border-radius: 0.5rem;
   margin-top: 1rem;
   padding-top: 2rem;
@@ -106,4 +117,5 @@ aside {
   text-align: left;
   padding-inline: 0.7rem;
   padding-block: 1.5rem;
+  color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=App.css.map */
