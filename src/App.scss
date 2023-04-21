@@ -68,6 +68,9 @@ ul {
 }
 
 .profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: $dark-magenta;
     color: white;
     border-radius: 0.5rem;
@@ -78,15 +81,34 @@ ul {
 
 .profile-icon {
     border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-inline: 0.5rem;
+}
+
+.profile-name {
+    padding-left: 1rem;
+    font-weight: $fw-700;
 }
 
 .verified {
     color: $soft-pink;
+    padding-left: 1rem;
 }
 
 .testimony {
     text-align: left;
     padding-inline: 0.7rem;
-    padding-block: 1.5rem;
+    padding-block: 1rem;
     color: $white;
+}
+
+// Desktop
+@media (min-width: 50rem) {
+
+    .App { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

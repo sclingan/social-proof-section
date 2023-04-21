@@ -30,12 +30,14 @@ function App() {
       <ul>
         <li className='profile'>
           <img src={colton} alt="" className='profile-icon'></img>
-          <p>
+          <div>
+          <p className='profile-name'>
             Colton Smith 
           </p>
           <p className='verified'>
             Verified Buyer
           </p>
+          </div>
           <p className='testimony'>
             "We needed the same printed design as the one we had ordered a week prior.
             Not only did they find the original order, but we also received it in time.
@@ -45,12 +47,14 @@ function App() {
 
         <li className='profile'>
           <img src={irene} alt="" className='profile-icon'></img>
-          <p>
+          <div>
+          <p className='profile-name'>
             Irene Roberts 
           </p>
           <p className='verified'>
             Verified Buyer
           </p>
+          </div>
           <p className='testimony'>
             "Customer service is always excellent and very quick turn around. Completely
             delighted with the simplicity of the purchase and the speed of delivery."
@@ -59,12 +63,14 @@ function App() {
 
         <li className='profile'>
           <img src={anne} alt="" className='profile-icon'></img>
-          <p>
+          <div>
+          <p className='profile-name'>
             Anne Wallace 
           </p>
           <p className='verified'>
             Verified Buyer
           </p>
+          </div>
           <p className='testimony'>
             "Put an order with this company and can only praise them for the very high
             standard. Will definitely use them again and recommend them to everyone!"

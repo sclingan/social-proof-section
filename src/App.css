@@ -97,6 +97,9 @@ ul {
 }
 
 .profile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: hsl(300, 43%, 22%);
   color: white;
   border-radius: 0.5rem;
@@ -107,15 +110,32 @@ ul {
 
 .profile-icon {
   border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-inline: 0.5rem;
+}
+
+.profile-name {
+  padding-left: 1rem;
+  font-weight: 700;
 }
 
 .verified {
   color: hsl(333, 80%, 67%);
+  padding-left: 1rem;
 }
 
 .testimony {
   text-align: left;
   padding-inline: 0.7rem;
-  padding-block: 1.5rem;
+  padding-block: 1rem;
   color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 50rem) {
+  .App {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=App.css.map */
