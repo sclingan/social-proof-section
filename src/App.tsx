@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import star from '../public/images/icon-star.svg'
 import anne from '../public/images/image-anne.jpg'
 import colton from '../public/images/image-colton.jpg'
 import irene from '../public/images/image-irene.jpg'
@@ -20,14 +18,14 @@ function App() {
         <li className='rating'>
           Rated 5 Stars in Reviews
         </li>
-        <li className='rating'>
+        <li className='rating' id='guru'>
           Rated 5 Stars in Report Guru
         </li>
-        <li className='rating'>
+        <li className='rating' id='besttech'>
           Rated 5 Stars in BestTech
         </li>
       </ul>
-      <ul>
+      <ul className='profile-container'>
         <li className='profile'>
           <img src={colton} alt="" className='profile-icon'></img>
           <div>

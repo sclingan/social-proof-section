@@ -138,4 +138,40 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  header {
+    max-width: 35%;
+  }
+  .rating {
+    margin-inline: 5rem;
+  }
+  .rating::before {
+    display: inline-block;
+    margin-right: 3rem;
+    margin-block: 0;
+  }
+  #guru {
+    margin-right: 3rem;
+    margin-left: 10rem;
+    padding-inline: 2rem;
+  }
+  #besttech {
+    margin-right: 1rem;
+    margin-left: 12rem;
+  }
+  .profile-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .profile {
+    display: inline-block;
+  }
+  .profile:nth-child(2) {
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+  }
+  .profile:nth-child(3) {
+    margin-top: 3rem;
+    margin-bottom: -2rem;
+  }
 }/*# sourceMappingURL=App.css.map */
