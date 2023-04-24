@@ -18,10 +18,10 @@ function App() {
         <li className='rating'>
           Rated 5 Stars in Reviews
         </li>
-        <li className='rating' id='guru'>
+        <li className='rating'>
           Rated 5 Stars in Report Guru
         </li>
-        <li className='rating' id='besttech'>
+        <li className='rating'>
           Rated 5 Stars in BestTech
         </li>
       </ul>

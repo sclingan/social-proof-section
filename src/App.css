@@ -45,6 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
   TODO:
   check background images
   check font weights
+  fix tablet layout
 */
 body {
   font-family: "League Spartan";
@@ -133,45 +134,47 @@ ul {
 }
 
 @media (min-width: 50rem) {
+  body {
+    margin-inline: 2rem;
+  }
   .App {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
   }
   header {
     max-width: 35%;
   }
   .rating {
-    margin-inline: 5rem;
+    margin-inline: 4.2rem;
+    padding-inline: 1rem;
   }
   .rating::before {
     display: inline-block;
     margin-right: 3rem;
     margin-block: 0;
   }
-  #guru {
-    margin-right: 3rem;
-    margin-left: 10rem;
-    padding-inline: 2rem;
+  .rating:nth-child(2) {
+    transform: translate(3.6rem, 0.5rem);
   }
-  #besttech {
-    margin-right: 1rem;
-    margin-left: 12rem;
+  .rating:nth-child(3) {
+    transform: translate(5.5rem, 1rem);
   }
   .profile-container {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
+    min-width: 100%;
   }
   .profile {
-    display: inline-block;
+    max-width: 25rem;
   }
   .profile:nth-child(2) {
-    margin-top: 2rem;
-    margin-bottom: -1rem;
+    transform: translate(0, 1rem);
   }
   .profile:nth-child(3) {
-    margin-top: 3rem;
-    margin-bottom: -2rem;
+    transform: translate(0, 2rem);
   }
 }/*# sourceMappingURL=App.css.map */
