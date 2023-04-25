@@ -15,7 +15,6 @@ $ff: 'League Spartan';
   TODO:
   check background images
   check font weights
-  fix tablet layout
 */  
 
 body {
@@ -105,10 +104,10 @@ ul {
 }
 
 // Desktop
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
 
     body {
-        margin-inline: 2rem;
+        margin-inline: 1rem;
     }
 
     .App { 
@@ -120,12 +119,13 @@ ul {
     }
 
     header {
-        max-width: 35%;
+        max-width: 25.625rem;
+        text-align: left;
+        flex-basis: 30%;
     }
 
     .rating {
-        // margin-inline: 6rem;
-        margin-inline: 4.2rem;
+        margin-inline: 5.5rem;
         padding-inline: 1rem;
     }
 

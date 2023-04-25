@@ -45,7 +45,6 @@ p, h1, h2, h3, h4, h5, h6 {
   TODO:
   check background images
   check font weights
-  fix tablet layout
 */
 body {
   font-family: "League Spartan";
@@ -133,9 +132,9 @@ ul {
   color: hsl(0, 0%, 100%);
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
   body {
-    margin-inline: 2rem;
+    margin-inline: 1rem;
   }
   .App {
     display: flex;
@@ -145,10 +144,12 @@ ul {
     justify-content: space-between;
   }
   header {
-    max-width: 35%;
+    max-width: 25.625rem;
+    text-align: left;
+    flex-basis: 30%;
   }
   .rating {
-    margin-inline: 4.2rem;
+    margin-inline: 5.5rem;
     padding-inline: 1rem;
   }
   .rating::before {
