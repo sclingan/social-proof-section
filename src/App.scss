@@ -14,7 +14,6 @@ $ff: 'League Spartan';
 /*
   TODO:
   check font weights
-  fix rating length
 */  
 
 body {
@@ -129,6 +128,10 @@ ul {
         padding-inline: 1rem;
     }
 
+    .p-rating {
+        display: inline;
+    }
+
     .rating::before {
         display: inline-block;
         margin-right: 3rem;
@@ -160,5 +163,13 @@ ul {
 
     .profile:nth-child(3) {
         transform: translate(0, 2rem);
+    }
+}
+
+// Fixes transition from tablet to desktop
+@media (min-width: 69.375rem) {
+
+    .rating {
+        padding-inline: 6rem;
     }
 }

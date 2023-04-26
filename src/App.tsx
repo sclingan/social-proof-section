@@ -16,13 +16,13 @@ function App() {
       </header>
       <ul>
         <li className='rating'>
-          Rated 5 Stars in Reviews
+          <p className='p-rating'>Rated 5 Stars in Reviews</p>
         </li>
         <li className='rating'>
-          Rated 5 Stars in Report Guru
+          <p className='p-rating'>Rated 5 Stars in Report Guru</p>
         </li>
         <li className='rating'>
-          Rated 5 Stars in BestTech
+          <p className='p-rating'>Rated 5 Stars in BestTech</p>
         </li>
       </ul>
       <ul className='profile-container'>
