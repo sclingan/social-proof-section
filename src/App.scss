@@ -11,11 +11,6 @@ $fw-500: 500;
 $fw-700: 700;
 $ff: 'League Spartan';
 
-/*
-  TODO:
-  check font weights
-*/  
-
 body {
     font-family: $ff;
     font-size: $font-size;
@@ -97,6 +92,7 @@ ul {
     padding-inline: 0.7rem;
     padding-block: 1rem;
     color: $white;
+    font-weight: $fw-700;
 }
 
 // Desktop
