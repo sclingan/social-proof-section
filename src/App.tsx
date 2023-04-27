@@ -14,7 +14,7 @@ function App() {
         See what our satisfied customers are saying about our services.
         </p>
       </header>
-      <section>
+      <main>
       <ul>
         <li className='rating'>
           <p className='p-rating'>Rated 5 Stars in Reviews</p>
@@ -26,8 +26,6 @@ function App() {
           <p className='p-rating'>Rated 5 Stars in BestTech</p>
         </li>
       </ul>
-      </section>
-      <section>
       <ul className='profile-container'>
         <li className='profile'>
           <img src={colton} alt="" className='profile-icon'></img>
@@ -78,7 +76,7 @@ function App() {
           </p>
         </li>
       </ul>
-      </section>
+      </main>
     </div>
   )
 }
